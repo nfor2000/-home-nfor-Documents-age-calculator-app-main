@@ -32,7 +32,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+
+![FireShot Capture 003 - Frontend Mentor - Age calculator app - nfor2000 github io](https://user-images.githubusercontent.com/124421807/235497831-d21579b5-17b8-4739-8e9b-2ff4f7e43da9.png)
+
 
 ### Links
 - Live Site URL: [View live site]( https://nfor2000.github.io/age-calculator-app-main/)
