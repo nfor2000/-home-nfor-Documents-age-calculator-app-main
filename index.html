@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="input-container">
+        <div class="input-box">
+          <label for="day">DAY</label>
+          <input type="text" id="day" placeholder="DD" data-verified = "false">
+          <span id="error"></span>
+        </div>
+        <div class="input-box">
+          <label for="month">MONTH</label>
+          <input type="text" id="month" placeholder="MM" data-verified = "false">
+          <span id="error"></span>
+        </div>
+        <div class="input-box">
+          <label for="year">YEAR</label>
+          <input type="text" id="year" placeholder="YYYY" data-verified = "false">
+          <span id="error"></span>
+        </div>
+        
+        <div class="circle">
+          <img src="assets/images/icon-arrow.svg" alt="">
+        </div>
+        <div class="tip">
+          Click delete to clear input fields
+        </div>
+      </div>
+      <div class="display-el">
+        <h1 class="years-el"><span id="year-value">--</span>years</h1>
+        <h1 class="month-el"><span id="month-value">--</span>months</h1>
+        <h1 class="days-el"><span id="day-value">--</span>days</h1>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
