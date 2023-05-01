@@ -1,0 +1,177 @@
+:root{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    background-color: hsl(0, 0%, 96%);
+}
+.container{
+    max-width:46.0rem ;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem;
+    border-radius: 1rem 1rem 10rem 0rem;
+}
+.input-container{
+    position: relative;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    padding:0 0 2rem;
+    border-bottom: .001rem solid hsl(0, 0%, 86%);
+    margin-bottom: 3rem;
+}
+.input-box{
+    width: 23%;
+}
+label{
+    color: hsl(0,0%,86%);
+    font-weight: 500px;
+}
+.input-box input{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: .7rem 1rem;
+    outline: none;
+    color: hsl(0,0%,8%);
+    font-weight: 600;
+    border-radius: .5rem;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+.input-box input:hover{
+    border-color:hsl(259, 100%, 65%) ;
+}
+.input-box input::placeholder{
+    accent-color: hsl(0,0%,86%);
+}
+#error{
+    font-size:0.75rem;
+    display: block;
+    padding:.5rem 0 0;
+    color: hsl(0, 100%, 67%);
+    visibility: hidden;
+    font-style: italic;
+}
+.input-box.success label{
+    color: hsl(259, 100%, 65%);
+}
+.input-box.success #error{
+    visibility: hidden;
+}
+.input-box.error input{
+    border-color: hsl(0, 100%, 67%);
+}
+.input-box.error label{
+    color: hsl(0, 100%, 67%);
+}
+.input-box.error #error{
+    visibility: visible;
+}
+.tip{
+    position: absolute;
+    padding: .5rem;
+    max-width: 14rem;
+    right: -12.5rem;
+    bottom: 4.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    letter-spacing: .1rem;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: .5rem .5rem .5rem 0;
+    display: none;
+}
+.tip::after{
+    position: inherit;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(135deg, hsl(259, 100%, 65%) 50%,transparent 50%);
+    left: 0;
+    bottom: -1.5rem;
+}
+.circle{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    right: 0;
+    bottom: -2rem;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img{
+    width:2rem;
+    height: 2rem;
+}
+.circle:hover{
+    cursor: pointer;
+    background-color: hsl(0,0%,8%);
+}
+.circle:hover + .tip{
+    display: block;
+}
+.display-el h1{
+    font-size: 6rem;
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(0,0%,8%);
+    line-height: 6rem;
+    margin-bottom: .4rem;
+}
+.display-el h1 span{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: .4rem;
+}
+.active{
+    visibility: visible;
+}
+@media screen and (max-width:514px) {
+    :root{
+        font-size: 10px;
+    }
+    main{
+        width: 100%;
+        padding: 1rem;
+    }
+    .container{
+        max-width: none;
+        width: 100%;
+    }
+    .input-container{
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .input-box{
+        width: 30%;
+    }
+    .input-box input{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .circle{
+        left: 40%;
+    }
+    .tip{
+        right: 2rem;
+        bottom: -1.5rem;
+        border-radius: 0;
+        text-align: center;
+    }
+    .tip::after{
+        left: -5%;
+        bottom: .9rem;
+        transform: rotate(-45deg);
+    }
+    .display-el h1{
+        font-size: 4.4rem;
+    }
+}
