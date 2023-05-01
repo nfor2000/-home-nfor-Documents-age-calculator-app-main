@@ -103,8 +103,8 @@ function checkDaysInMonth() {
     parent.className = 'input-box error';
     error.innerText = 'Must be a valid date';
     Day.dataset.verified = 'false';
-    inputFields.forEach((input) => {
-        const parent = input.parentElement;
+    for(let i = 1 ;i < inputFields.length;i++) {
+        const parent = inputFields[i].parentElement;
         parent.className = 'input-box error'
       })
   }
