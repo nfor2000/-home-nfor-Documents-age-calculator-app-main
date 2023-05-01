@@ -106,6 +106,7 @@ function checkDaysInMonth() {
     for(let i = 1 ;i < inputFields.length;i++) {
         const parent = inputFields[i].parentElement;
         parent.className = 'input-box error'
+        parent.querySelector('#error').innerText = ""
       })
   }
 }
