@@ -9,9 +9,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -37,7 +35,7 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 ### Links
-- Live Site URL: [View live site](https://your-live-site-url.com)
+- Live Site URL: [View live site]( https://nfor2000.github.io/age-calculator-app-main/)
 
 ## My process
 
@@ -47,7 +45,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Media query
 - Javascript
 
 
